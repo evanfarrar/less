@@ -310,7 +310,7 @@ grammar Less
   end
   
   rule unit
-    ('px'/'em'/'pc'/'%'/'pt'/'cm'/'mm')?
+    ('px'/'em'/'ex'/'pc'/'%'/'pt'/'cm'/'mm')?
   end
 
   #

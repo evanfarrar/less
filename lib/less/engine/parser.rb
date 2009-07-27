@@ -3392,8 +3392,19 @@ module Less
                 if r8
                   r1 = r8
                 else
-                  @index = i1
-                  r1 = nil
+                  if has_terminal?('ex', false, index)
+                    r9 = instantiate_node(SyntaxNode,input, index...(index + 2))
+                    @index += 2
+                  else
+                    terminal_parse_failure('ex')
+                    r9 = nil
+                  end
+                  if r9
+                    r1 = r9
+                  else
+                    @index = i1
+                    r1 = nil
+                  end
                 end
               end
             end

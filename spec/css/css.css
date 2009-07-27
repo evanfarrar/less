@@ -39,6 +39,7 @@ h2[title] { font-size: 100%; }
   -moz-border-radius: 2px;
   display: -moz-inline-stack;
   width: 0.1em;
+  height: 1ex;
   background-color: #009998;
   color: red !important;
   background-image: url(images/image.jpg);
